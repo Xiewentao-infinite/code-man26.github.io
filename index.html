@@ -6,13 +6,13 @@
   <meta name="theme-color" content=#58b77a>
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="John Doe">
+  <meta name="author" content="Wentao Xie">
   <meta name="keywords" content="">
   <meta name="description" content="">
   <script id="hexo-configurations">
   var CONFIG = {
     root: '/',
-    theme: 'lx',
+    theme: 'hexo-theme-lx-0.3.9',
     version: '0.3.9',
     localsearch:{
       "enable": false,
@@ -68,10 +68,13 @@
   <div class="overlay">
   <div class="featured">
     <div class="avatar"><a href="/"><img src="/images/avatar.jpeg"></a></div>
-    <span>John Doe</span>
+    <span>Wentao Xie</span>
     <h1>Hexo</h1>
     
-    
+    <div class="social-links">
+    <a href="https://github.com/code-man26" target="_blank"><i class="fa fa-github fa-fw"></i></a>
+    <a href="mailto:1109714719@qq.com" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+</div>
   </div>
   </div>
 </div>
@@ -81,14 +84,17 @@
 
   <div class="lx-entry padding">
     <div>
-      <h2 class="title"><a href="/2020/06/12/Blog/">Blog</a></h2>
-      <span class="lx-post-detail"><i class="fa fa-calendar-o"></i> 2020-06-12</span>
-      <p><h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
-<h2 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h2><p>引用</p>
-<p><a href="http://www.xx.com" target="_blank" rel="noopener">www.xx.com</a></p>
+      <h2 class="title"><a href="/2020/06/13/Blog/">Blog</a></h2>
+      <span class="lx-post-detail"><i class="fa fa-calendar-o"></i> 2020-06-13</span>
+      <p><h2 id="第一章（Hexo-Blog-搭建）"><a href="#第一章（Hexo-Blog-搭建）" class="headerlink" title="第一章（Hexo Blog 搭建）"></a>第一章（Hexo Blog 搭建）</h2><p>— #安装Nodejs<br>node -v #查看node版本<br>npm -v #查看npm版本<br>npm install -g cnpm –registry=<a href="http://registry.npm.taobao.org" target="_blank" rel="noopener">http://registry.npm.taobao.org</a> #安装淘宝的cnpm 管理器<br>cnpm -v #查看cnpm版本<br>cnpm install -g hexo-cli #安装hexo框架<br>hexo -v #查看hexo版本<br>mkdir blog #创建blog目录<br>cd blog #进入blog目录<br>sudo hexo init #生成博客 初始化博客<br>hexo s #启动本地博客服务<br><a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> #本地访问地址</p>
+<h2 id="第二章（博客文件创建）"><a href="#第二章（博客文件创建）" class="headerlink" title="第二章（博客文件创建）"></a>第二章（博客文件创建）</h2><p>hexo n “我的第一篇文章” #创建新的文章<br>#返回blog目录<br>hexo clean #清理<br>hexo g #生成<br>#Github创建一个新的仓库 YourGithubName.github.io<br>cnpm install –save hexo-deployer-git #在blog目录下安装git部署插件<br>#配置_config.yml</p>
+<h2 id="第三章-线上部署"><a href="#第三章-线上部署" class="headerlink" title="第三章 线上部署"></a>第三章 线上部署</h2><p>进入blog文件下 修改——config.yml文件（vim _config.yml）<br>Deployment<br>Docs: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a><br>deploy:<br>type: git<br>#repo: （通过Gitbub库免费生成的库来做服务器)<br>#例：<a href="https://github.com/code-man26/code-man26.github.io.git" target="_blank" rel="noopener">https://github.com/code-man26/code-man26.github.io.git</a><br>#注意：库名称一定要和自己的Github名称一致<br>branch: master</p>
+<p>hexo d #部署到Github仓库里<br><a href="https://YourGithubName.github.io/" target="_blank" rel="noopener">https://YourGithubName.github.io/</a> #访问这个地址可以查看博客<br>git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia #下载yilia主题到本地</p>
+<p>#修改hexo根目录下的 _config.yml 文件 ： theme: yilia</p>
+<p>hexo c #清理一下<br>hexo g #生成<br>hexo d #部署到远程Github仓库</p>
+<p><a href="https://YourGithubName.github.io/" target="_blank" rel="noopener">https://YourGithubName.github.io/</a> #查看博客</p>
 </p>
-      <div class="post-button"><a class="btn" href="/2020/06/12/Blog/" rel="noopener"><i class="fa fa-angle-double-right fa-fw"></i>Read More</a></div>
+      <div class="post-button"><a class="btn" href="/2020/06/13/Blog/" rel="noopener"><i class="fa fa-angle-double-right fa-fw"></i>Read More</a></div>
     </div>
   </div>
   <div class="lx-entry padding">
@@ -124,11 +130,11 @@
       <div class="col">
         <div class="row for-pic">
           <div class="profile-pic">
-            <a href="/"><img src="/images/avatar.jpeg" alt="John Doe"/></a>
+            <a href="/"><img src="/images/avatar.jpeg" alt="Wentao Xie"/></a>
           </div>
         </div>
         <div class="row for-name">
-          <p>John Doe</p>
+          <p>Wentao Xie</p>
           <span class="tagline">Hello, World!</span>
         </div>
       </div>
@@ -185,6 +191,7 @@
 	});
 }());
 </script>
+
 
 
 </body>
