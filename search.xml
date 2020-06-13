@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Bolg</title>
-    <url>/2020/06/12/Bolg/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>Blog</title>
-    <url>/2020/06/13/Blog/</url>
+    <url>/2019/08/10/Blog/</url>
     <content><![CDATA[<h2 id="第一章（Hexo-Blog-搭建）"><a href="#第一章（Hexo-Blog-搭建）" class="headerlink" title="第一章（Hexo Blog 搭建）"></a>第一章（Hexo Blog 搭建）</h2><p>— #安装Nodejs<br>node -v #查看node版本<br>npm -v #查看npm版本<br>npm install -g cnpm –registry=<a href="http://registry.npm.taobao.org" target="_blank" rel="noopener">http://registry.npm.taobao.org</a> #安装淘宝的cnpm 管理器<br>cnpm -v #查看cnpm版本<br>cnpm install -g hexo-cli #安装hexo框架<br>hexo -v #查看hexo版本<br>mkdir blog #创建blog目录<br>cd blog #进入blog目录<br>sudo hexo init #生成博客 初始化博客<br>hexo s #启动本地博客服务<br><a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> #本地访问地址</p>
 <h2 id="第二章（博客文件创建）"><a href="#第二章（博客文件创建）" class="headerlink" title="第二章（博客文件创建）"></a>第二章（博客文件创建）</h2><p>hexo n “我的第一篇文章” #创建新的文章<br>#返回blog目录<br>hexo clean #清理<br>hexo g #生成</p>
 <a id="more"></a>
@@ -17,6 +12,12 @@
 <p>#修改hexo根目录下的 _config.yml 文件 ： theme: yilia</p>
 <p>hexo c #清理一下<br>hexo g #生成<br>hexo d #部署到远程Github仓库</p>
 <p><a href="https://YourGithubName.github.io/" target="_blank" rel="noopener">https://YourGithubName.github.io/</a> #查看博客</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Java权限修饰符</title>
+    <url>/2019/08/15/Java%E6%9D%83%E9%99%90%E4%BF%AE%E9%A5%B0%E7%AC%A6/</url>
+    <content><![CDATA[<h2 id="Java中有四种权限修饰符"><a href="#Java中有四种权限修饰符" class="headerlink" title="Java中有四种权限修饰符"></a>Java中有四种权限修饰符</h2><p>public &gt; protected &gt; (default) &gt; private</p>
 ]]></content>
   </entry>
 </search>

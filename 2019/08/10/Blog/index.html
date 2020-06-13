@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme-color" content=#58b77a>
-  <title>Archives | Hexo</title>
+  <title>Blog | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Wentao Xie">
   <meta name="keywords" content="">
@@ -62,44 +62,78 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
 <meta name="generator" content="Hexo 4.2.1"></head>
 <body>
+<div class="single">
 
 <div id="page">
-
-<div id="lx-aside" style="background-image: url(//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/cover.jpeg)">
+<div id="lx-aside" style="background-image: url(//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/post_cover.jpeg)" data-stellar-background-ratio="0.5">
   <div class="overlay">
-  <div class="featured">
+  <div class="page-title">
     <div class="avatar"><a href="/"><img src="/images/avatar.jpeg"></a></div>
-    <span>Wentao Xie</span>
-    <h1>Hexo</h1>
+    <span>2019-08-10</span>
+    <h2>Blog</h2>
     
     <div class="social-links">
     <a href="https://github.com/code-man26" target="_blank"><i class="fa fa-github fa-fw"></i></a>
     <a href="mailto:1109714719@qq.com" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+</div></div>
 </div>
-  </div>
-  </div>
 </div>
 
 <div id="lx-main-content">
   <div class="lx-post">
-  <h2 class="pagehead">Archives</h2>
-    <div class="lx-entry padding"><div>
-    <span class="lx-post-detail">2020-06-13</span>
-    <h2 class="title"><a href="/2020/06/13/Blog/">Blog</a></h2>
-    <p></p></div></div><div class="lx-entry padding"><div>
-    <span class="lx-post-detail">2020-06-12</span>
-    <h2 class="title"><a href="/2020/06/12/Bolg/">Bolg</a></h2>
-    <p></p></div></div>
+    <div class="lx-entry padding">
+      <div>
+        <h2 id="第一章（Hexo-Blog-搭建）"><a href="#第一章（Hexo-Blog-搭建）" class="headerlink" title="第一章（Hexo Blog 搭建）"></a>第一章（Hexo Blog 搭建）</h2><p>— #安装Nodejs<br>node -v #查看node版本<br>npm -v #查看npm版本<br>npm install -g cnpm –registry=<a href="http://registry.npm.taobao.org" target="_blank" rel="noopener">http://registry.npm.taobao.org</a> #安装淘宝的cnpm 管理器<br>cnpm -v #查看cnpm版本<br>cnpm install -g hexo-cli #安装hexo框架<br>hexo -v #查看hexo版本<br>mkdir blog #创建blog目录<br>cd blog #进入blog目录<br>sudo hexo init #生成博客 初始化博客<br>hexo s #启动本地博客服务<br><a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> #本地访问地址</p>
+<h2 id="第二章（博客文件创建）"><a href="#第二章（博客文件创建）" class="headerlink" title="第二章（博客文件创建）"></a>第二章（博客文件创建）</h2><p>hexo n “我的第一篇文章” #创建新的文章<br>#返回blog目录<br>hexo clean #清理<br>hexo g #生成</p>
+<a id="more"></a>
+<p>#Github创建一个新的仓库 YourGithubName.github.io<br>cnpm install –save hexo-deployer-git #在blog目录下安装git部署插件<br>#配置_config.yml</p>
+<h2 id="第三章-线上部署"><a href="#第三章-线上部署" class="headerlink" title="第三章 线上部署"></a>第三章 线上部署</h2><p>进入blog文件下 修改——config.yml文件（vim _config.yml）<br>Deployment<br>Docs: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a><br>deploy:<br>type: git<br>#repo: （通过Gitbub库免费生成的库来做服务器)<br>#例：<a href="https://github.com/code-man26/code-man26.github.io.git" target="_blank" rel="noopener">https://github.com/code-man26/code-man26.github.io.git</a><br>#注意：库名称一定要和自己的Github名称一致<br>branch: master</p>
+<p>hexo d #部署到Github仓库里<br><a href="https://YourGithubName.github.io/" target="_blank" rel="noopener">https://YourGithubName.github.io/</a> #访问这个地址可以查看博客<br>git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia #下载yilia主题到本地</p>
+<p>#修改hexo根目录下的 _config.yml 文件 ： theme: yilia</p>
+<p>hexo c #清理一下<br>hexo g #生成<br>hexo d #部署到远程Github仓库</p>
+<p><a href="https://YourGithubName.github.io/" target="_blank" rel="noopener">https://YourGithubName.github.io/</a> #查看博客</p>
 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="lx-navigation">
+	<div class="lx-cover prev lx-cover-sm" style="background-image: url(//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/footer-l.jpeg)">
+		<div class="overlay"></div>
+		<a class="copy" href="/2019/08/15/Java%E6%9D%83%E9%99%90%E4%BF%AE%E9%A5%B0%E7%AC%A6/">
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span>Next</span>
+						<h3>Java权限修饰符</h3>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+        <div class="lx-cover next lx-cover-sm" style="background-image: url(//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/footer-r.jpeg)">
+		<div class="overlay"></div>
+		<a class="copy" href="#">
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span>Prev</span>
+						<h3>No older post</h3>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+</div>
 
+</div>
+<div class="comment"><div id="comments"></div></div>
 <footer>
   <div>
   Copyright &copy; 2019.<a href="/">Hexo</a><br>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme <a href="https://lx.js.org" target="_blank">Lx</a><br>
   </div>
 </footer>
 
-  </div>
-</div>
 </div>
 
 <button class="hamburger hamburger--arrow-r" type="button">
