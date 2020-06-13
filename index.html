@@ -15,18 +15,18 @@
     theme: 'hexo-theme-lx-0.3.9',
     version: '0.3.9',
     localsearch:{
-      "enable": false,
+      "enable": true,
       "trigger": "auto",
       "top_n_per_article": 1,
-      "unescape": false,
-      "preload": false
+      "unescape": true,
+      "preload": true
       },
-    path: '-'
+    path: 'search.xml'
   };
 </script>
 
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/css/main.min.css">
+  <link rel="stylesheet" href="/css/main.css">
   <style type="text/css">
     pre,
     code {
@@ -47,7 +47,7 @@
   </style>
 
   <script src="//cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/js/jquery.jside.menu.js"></script>
+  <script src="/js/jquery.jside.menu.js"></script>
 	<script>
 	$(document).ready(function(){
 	$(".menu-container").jSideMenu({
@@ -63,6 +63,23 @@
 <meta name="generator" content="Hexo 4.2.1"></head>
 <body>
 <div id="page">
+<a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i></a>
+<div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Search..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
 
 <div id="lx-aside" style="background-image: url(//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/cover.jpeg)">
   <div class="overlay">
@@ -130,7 +147,7 @@
         </div>
         <div class="row for-name">
           <p>Wentao Xie</p>
-          <span class="tagline">Hello, World!</span>
+          <span class="tagline">Wellcome to My Blog</span>
         </div>
       </div>
     </span>
@@ -139,7 +156,10 @@
   <ul class="menu-items">
     <li><a href="/"><i class="fa fa-home fa-fw"></i>Home</a></li>
     <li><a href="/archives/"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
-    
+    <li class="has-sub"><span class="dropdown-heading">
+      <i class="fa fa-th-list fa-fw"></i>Categories</span>
+        
+    </li>
     <li class="has-sub"><span class="dropdown-heading">
       <i class="fa fa-bookmark fa-fw"></i>Pages</span>
         <ul>
@@ -160,7 +180,7 @@
 <div class="gototop js-top">
   <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
 </div>
-<script src="//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/js/jquery.easing.min.js"></script>
+<script src="/js/jquery.easing.min.js"></script>
 <script>
 (function () {
 	"use strict";
@@ -186,7 +206,7 @@
 	});
 }());
 </script>
-
+<script src="/js/local.search.js"></script>
 
 
 </body>
