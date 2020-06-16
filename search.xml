@@ -18,9 +18,16 @@
     <title>Java权限修饰符</title>
     <url>/2019/08/15/Java%E6%9D%83%E9%99%90%E4%BF%AE%E9%A5%B0%E7%AC%A6/</url>
     <content><![CDATA[<h2 id="Java中有四种权限修饰符"><a href="#Java中有四种权限修饰符" class="headerlink" title="Java中有四种权限修饰符"></a>Java中有四种权限修饰符</h2><p>public &gt; protected &gt; (default) &gt; private</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">子包 demo.sub sub就是demo的子包</span><br><span class="line">Java 中有四种权限修饰符</span><br><span class="line">             <span class="keyword">public</span> &gt; <span class="keyword">protected</span> &gt; (<span class="keyword">default</span>) &gt; <span class="keyword">private</span></span><br><span class="line">同一个类       Yes     Yes          Yes          Yes</span><br><span class="line">同一个包       Yes     Yes          Yes          NO</span><br><span class="line">不同包子类     Yes     Yes          NO           NO</span><br><span class="line">不同包非子类   Yes      NO          No            No</span><br><span class="line">注意：（<span class="keyword">default</span>）并不是关键字<span class="string">"default"</span>，而是是根本不写</span><br></pre></td></tr></table></figure>
+
+
 ]]></content>
+      <categories>
+        <category>mod</category>
+      </categories>
       <tags>
-        <tag>Test Java | Java</tag>
+        <tag>Test</tag>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -2493,6 +2500,22 @@
 ]]></content>
       <tags>
         <tag>Test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>内部类的同名变量访问</title>
+    <url>/2019/09/03/%E5%86%85%E9%83%A8%E7%B1%BB%E7%9A%84%E5%90%8C%E5%90%8D%E5%8F%98%E9%87%8F%E8%AE%BF%E9%97%AE/</url>
+    <content><![CDATA[<h2 id="内部类的同名变量访问"><a href="#内部类的同名变量访问" class="headerlink" title="内部类的同名变量访问"></a>内部类的同名变量访问</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 如果出现了重名现象那么格式是：</span></span><br><span class="line"><span class="comment">// 外部类名称.this.外部类成员变量名</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Outer</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> num = <span class="number">10</span>; <span class="comment">// 外部类的成员变量</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Inner</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> num = <span class="number">20</span>;<span class="comment">// 内部类的成员变量</span></span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">method</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">int</span> num = <span class="number">30</span>; <span class="comment">// 内部类的成员变量</span></span><br><span class="line">            System.out.println(num); <span class="comment">// 局部变量，就因原则。</span></span><br><span class="line">            System.out.println(<span class="keyword">this</span>.num);<span class="comment">// 内部类的成员变量</span></span><br><span class="line"><span class="comment">//        System.out.println(super.num); // 错误</span></span><br><span class="line">            System.out.println(Outer.<span class="keyword">this</span>.num); <span class="comment">//外部类的成员变量</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 调用</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo02InnerClass</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 外部类名称.内部类名称 对象名 = new 外部类名称().new 内部类名称();</span></span><br><span class="line">        Outer.Inner obj = <span class="keyword">new</span> Outer().<span class="keyword">new</span> Inner();</span><br><span class="line">        obj.method();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code class="markdown"><span class="xml"><span class="comment">{%note default%}
+### 输出结果为
+30
+20
+10
+{%endnote%}</span></span></code></pre>
+]]></content>
+      <tags>
+        <tag>Java</tag>
       </tags>
   </entry>
 </search>
