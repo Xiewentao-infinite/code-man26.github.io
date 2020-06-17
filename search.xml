@@ -23,7 +23,7 @@
 
 ]]></content>
       <categories>
-        <category>mod</category>
+        <category>Java</category>
       </categories>
       <tags>
         <tag>Test</tag>
@@ -2521,5 +2521,14 @@
         <tag>Test</tag>
         <tag>Java</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>StringTest</title>
+    <url>/2020/06/17/StringTest/</url>
+    <content><![CDATA[<h2 id="字符串练习题"><a href="#字符串练习题" class="headerlink" title="字符串练习题"></a>字符串练习题</h2><div class="note primary">
+            <h3 id="题目：键盘输入一个字符串，并且统计其中各种字符出现的次数，种类有：大写字母、小写字母、数字、字符。"><a href="#题目：键盘输入一个字符串，并且统计其中各种字符出现的次数，种类有：大写字母、小写字母、数字、字符。" class="headerlink" title="题目：键盘输入一个字符串，并且统计其中各种字符出现的次数，种类有：大写字母、小写字母、数字、字符。"></a>题目：键盘输入一个字符串，并且统计其中各种字符出现的次数，种类有：大写字母、小写字母、数字、字符。</h3><p>思路：<br>1，输入。Scanner<br>2，键盘输入字符串：String str = sc.next();<br>3，定义四个变量，分别代表四种字符串各自出现的次数。<br>4，需要堆字符串的每个字进行检查，String –&gt; char[] ,方法就是toCharArray()<br>5，遍历char[]字符数组，对当前字符的种类进行判断。并且用四个变量进行++动作<br>6，打印四个变量出现的次数</p>
+          </div>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo07StringCount</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        System.out.println(<span class="string">"请输入一个字符串"</span>);</span><br><span class="line">        String input = sc.next();</span><br><span class="line">        <span class="keyword">int</span> A = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> a = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> num = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> str = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">char</span>[] charArray = input.toCharArray();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; charArray.length; i++) &#123;</span><br><span class="line">            <span class="keyword">char</span> ch = charArray[i];</span><br><span class="line">            <span class="keyword">if</span> (<span class="string">'A'</span> &lt;= ch &amp;&amp; ch &lt;= <span class="string">'Z'</span>) &#123;</span><br><span class="line">                A++;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="string">'a'</span> &lt;= ch &amp;&amp; ch &lt;= <span class="string">'z'</span>) &#123;</span><br><span class="line">                a++;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="string">'0'</span> &lt;= ch &amp;&amp; ch &lt;= <span class="string">'9'</span>) &#123;</span><br><span class="line">                num++;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                str++;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"大写字母有"</span> + A);</span><br><span class="line">        System.out.println(<span class="string">"小写字母有"</span> + a);</span><br><span class="line">        System.out.println(<span class="string">"数字"</span> + num);</span><br><span class="line">        System.out.println(<span class="string">"字符"</span> + str);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
   </entry>
 </search>
