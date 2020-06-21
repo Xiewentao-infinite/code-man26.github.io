@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme-color" content=#58b77a>
-  <title>Archives | 有道无术术可求,有术无道止于术。</title>
+  <title>Java编程思想 | 有道无术术可求,有术无道止于术。</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="谢文涛">
   <meta name="keywords" content="">
@@ -62,8 +62,7 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
 <meta name="generator" content="Hexo 4.2.1"></head>
 <body>
-
-<div id="page">
+<div class="single">
 <a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i></a>
 <div class="popup search-popup local-search-popup">
   <div class="local-search-header clearfix">
@@ -82,56 +81,80 @@
   <div id="local-search-result"></div>
 </div>
 
-<div id="lx-aside" style="background-image: url(//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/cover.jpeg)">
+<div id="page">
+<div id="lx-aside" style="background-image: url(//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/post_cover.jpeg)" data-stellar-background-ratio="0.5">
   <div class="overlay">
-  <div class="featured">
+  <div class="page-title">
     <div class="avatar"><a href="/"><img src="/images/avatar.jpeg"></a></div>
-    <span>谢文涛</span>
-    <h1>有道无术术可求,有术无道止于术。</h1>
-    
+    <span>2020-06-20</span>
+    <h2>Java编程思想</h2>
+    <div class="tags"><i class="fa fa-tag"></i><a class="tag-link" href="/tags/Java/" rel="tag">Java</a></div>
     <div class="social-links">
     <a href="https://github.com/code-man26" target="_blank"><i class="fa fa-github fa-fw"></i></a>
     <a href="mailto:1109714719@qq.com" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+</div></div>
 </div>
-  </div>
-  </div>
 </div>
 
 <div id="lx-main-content">
   <div class="lx-post">
-  <h2 class="pagehead">Archives</h2>
-    <div class="lx-entry padding"><div>
-    <span class="lx-post-detail">2019-12-20</span>
-    <h2 class="title"><a href="/2019/12/20/Spring%20Boot/">SpringBoot</a></h2>
-    <p></p></div></div><div class="lx-entry padding"><div>
-    <span class="lx-post-detail">2019-12-05</span>
-    <h2 class="title"><a href="/2019/12/05/CSS/">CSS</a></h2>
-    <p></p></div></div><div class="lx-entry padding"><div>
-    <span class="lx-post-detail">2019-09-17</span>
-    <h2 class="title"><a href="/2019/09/17/images/StringTest/">StringTest</a></h2>
-    <p></p></div></div><div class="lx-entry padding"><div>
-    <span class="lx-post-detail">2019-09-03</span>
-    <h2 class="title"><a href="/2019/09/03/%E5%86%85%E9%83%A8%E7%B1%BB%E7%9A%84%E5%90%8C%E5%90%8D%E5%8F%98%E9%87%8F%E8%AE%BF%E9%97%AE/">内部类的同名变量访问</a></h2>
-    <p><i class="fa fa-tag"></i><a class="tag-link" href="/tags/Java/" rel="tag">Java</a> <i class="fa fa-tag"></i><a class="tag-link" href="/tags/Test/" rel="tag">Test</a></p></div></div><div class="lx-entry padding"><div>
-    <span class="lx-post-detail">2019-08-20</span>
-    <h2 class="title"><a href="/2019/08/20/Test/">Test</a></h2>
-    <p><i class="fa fa-tag"></i><a class="tag-link" href="/tags/Test/" rel="tag">Test</a></p></div></div><div class="lx-entry padding"><div>
-    <span class="lx-post-detail">2019-08-15</span>
-    <h2 class="title"><a href="/2019/08/15/Java%E6%9D%83%E9%99%90%E4%BF%AE%E9%A5%B0%E7%AC%A6/">Java权限修饰符</a></h2>
-    <p><i class="fa fa-tag"></i><a class="tag-link" href="/tags/Java/" rel="tag">Java</a> <i class="fa fa-tag"></i><a class="tag-link" href="/tags/Test/" rel="tag">Test</a></p></div></div><div class="lx-entry padding"><div>
-    <span class="lx-post-detail">2019-08-10</span>
-    <h2 class="title"><a href="/2019/08/10/Blog/">Blog</a></h2>
-    <p></p></div></div>
+    <div class="lx-entry padding">
+      <div>
+        <div align="center">
+
+<h2 id="Java编程思想随笔"><a href="#Java编程思想随笔" class="headerlink" title="Java编程思想随笔"></a>Java编程思想随笔</h2></div>
+<blockquote class='blockquote-center'><p>一切都是对象 </p>
+</blockquote>
+
+<h2 id="创建对象"><a href="#创建对象" class="headerlink" title="创建对象"></a>创建对象</h2><h4 id="new关键字的意思是“给我一个新的对象”"><a href="#new关键字的意思是“给我一个新的对象”" class="headerlink" title="new关键字的意思是“给我一个新的对象”"></a>new关键字的意思是“给我一个新的对象”</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String str = <span class="keyword">new</span> String(<span class="string">"string"</span>)</span><br></pre></td></tr></table></figure>
+
+<h4 id="它不仅表示“给我一个新的字符串”，而去通过提供一个初始字符串，给出了怎样产生这个String的信息。"><a href="#它不仅表示“给我一个新的字符串”，而去通过提供一个初始字符串，给出了怎样产生这个String的信息。" class="headerlink" title="它不仅表示“给我一个新的字符串”，而去通过提供一个初始字符串，给出了怎样产生这个String的信息。"></a>它不仅表示“给我一个新的字符串”，而去通过提供一个初始字符串，给出了<code>怎样</code>产生这个String的信息。</h4><div class="note default">
+            <h3 id="寄存器"><a href="#寄存器" class="headerlink" title="寄存器"></a>寄存器</h3><p>这是最快的寄存器，因为它位于不同于其他存储区的地方——处理器内部。但是寄存器的<code>数量及其有限</code>。所以寄存器根据需求进行分配。你不能直接控制，也不能在程序中感觉到寄存器存在的任何迹象（另一方面，C和C++允许您向编译器建议寄存器的分配方式）</p>
+          </div>
 
 
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="lx-navigation">
+	<div class="lx-cover prev lx-cover-sm" style="background-image: url(//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/footer-l.jpeg)">
+		<div class="overlay"></div>
+		<a class="copy" href="/2020/06/21/M/">
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span>Next</span>
+						<h3>Java Date</h3>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+        <div class="lx-cover next lx-cover-sm" style="background-image: url(//cdn.jsdelivr.net/npm/theme-lx@0.3.9/source/images/footer-r.jpeg)">
+		<div class="overlay"></div>
+		<a class="copy" href="/2020/06/14/EnglisTest/">
+			<div class="display-t">
+				<div class="display-tc">
+					<div>
+						<span>Prev</span>
+						<h3>English...</h3>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+</div>
+
+</div>
+<div class="comment"><div id="comments"></div></div>
 <footer>
   <div>
   Copyright &copy; 2019.<a href="/">有道无术术可求,有术无道止于术。</a><br>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme <a href="https://lx.js.org" target="_blank">Lx</a><br>
   </div>
 </footer>
 
-  </div>
-</div>
 </div>
 
 <button class="hamburger hamburger--arrow-r" type="button">
@@ -212,5 +235,35 @@
 <script src="/js/local.search.js"></script>
 
 
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+  TeX: {
+          extensions: ["mhchem.js"]
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
+    }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
 </body>
 </html>
