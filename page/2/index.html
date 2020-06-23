@@ -101,6 +101,18 @@
 
   <div class="lx-entry padding">
     <div>
+      <h2 class="title"><a href="/2019/08/15/Java%E6%9D%83%E9%99%90%E4%BF%AE%E9%A5%B0%E7%AC%A6/">Java权限修饰符</a></h2>
+      <span class="lx-post-detail"><i class="fa fa-calendar-o"></i> 2019-08-15 | <i class="fa fa-folder-o"></i> <a class="category-link" href="/categories/Java/">Java</a></span>
+      <p><h2 id="Java中有四种权限修饰符"><a href="#Java中有四种权限修饰符" class="headerlink" title="Java中有四种权限修饰符"></a>Java中有四种权限修饰符</h2><p>public &gt; protected &gt; (default) &gt; private</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">子包 demo.sub sub就是demo的子包</span><br><span class="line">Java 中有四种权限修饰符</span><br><span class="line">             <span class="keyword">public</span> &gt; <span class="keyword">protected</span> &gt; (<span class="keyword">default</span>) &gt; <span class="keyword">private</span></span><br><span class="line">同一个类       Yes     Yes          Yes          Yes</span><br><span class="line">同一个包       Yes     Yes          Yes          NO</span><br><span class="line">不同包子类     Yes     Yes          NO           NO</span><br><span class="line">不同包非子类   Yes      NO          No            No</span><br><span class="line">注意：（<span class="keyword">default</span>）并不是关键字<span class="string">"default"</span>，而是是根本不写</span><br></pre></td></tr></table></figure>
+
+
+</p>
+      <div class="post-button"><a class="btn" href="/2019/08/15/Java%E6%9D%83%E9%99%90%E4%BF%AE%E9%A5%B0%E7%AC%A6/" rel="noopener"><i class="fa fa-angle-double-right fa-fw"></i>Read More</a></div>
+    </div>
+  </div>
+  <div class="lx-entry padding">
+    <div>
       <h2 class="title"><a href="/2019/08/10/Blog/">Blog</a></h2>
       <span class="lx-post-detail"><i class="fa fa-calendar-o"></i> 2019-08-10</span>
       <p><h2 id="第一章（Hexo-Blog-搭建）"><a href="#第一章（Hexo-Blog-搭建）" class="headerlink" title="第一章（Hexo Blog 搭建）"></a>第一章（Hexo Blog 搭建）</h2><p>— #安装Nodejs<br>node -v #查看node版本<br>npm -v #查看npm版本<br>npm install -g cnpm –registry=<a href="http://registry.npm.taobao.org" target="_blank" rel="noopener">http://registry.npm.taobao.org</a> #安装淘宝的cnpm 管理器<br>cnpm -v #查看cnpm版本<br>cnpm install -g hexo-cli #安装hexo框架<br>hexo -v #查看hexo版本<br>mkdir blog #创建blog目录<br>cd blog #进入blog目录<br>sudo hexo init #生成博客 初始化博客<br>hexo s #启动本地博客服务<br><a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> #本地访问地址</p>
